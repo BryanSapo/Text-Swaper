@@ -1,5 +1,6 @@
 .panel{
     margin: auto;
+    padding: 0px;
     /* background-color: antiquewhite; */
     width: 90%;
     height:90%;
@@ -7,19 +8,30 @@
 .field{
     border: solid var(--third-color);
     border-radius: 15px;
-    padding: 15px;
-    margin: 1px;
+    padding-top: 15px;
+    padding-left: 15px;
+    /* margin: 1px; */
     text-align: left;
     width: 100%;
     height: 70%;
 }
 .submit{
     background-color: var(--primary-color);
+    margin: 1px;
     border-radius: 15px;
-    width: 15%;
-    height: 10%;
+    width: 30%;
+    height: 5%;
     color: black;
 }
+@media (min-width:768px){
+    .submit{
+        background-color: var(--primary-color);
+        border-radius: 15px;
+        width: 15%;
+        height: 5%;
+        color: black;
+    }
+  }
 .submit:hover{
     cursor: pointer;
     background-color: var(--third-color);

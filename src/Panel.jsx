@@ -10,6 +10,10 @@ function Panel(){
         const processedText = processText(fieldText);
         fieldElement.value = processedText;
     };
+    const clearInput=()=>{
+        const fieldElement = document.querySelector('.field');
+        fieldElement.value="";
+    }
 
     const processText = (inputText) => {
         const regex = /\*\[(.*?)\]\*/g;
@@ -19,6 +23,7 @@ function Panel(){
         <div className="panel">
             <Nav/>
             <textarea className="field"/>
+            <button className="submit" onClick={clearInput}>Clear</button>
             <button className="submit" onClick={submit}>Go</button>
         </div>
     )

@@ -6,6 +6,8 @@
 }
 body{
   display: inline;
+  margin: 0px;
+  padding: 0px;
   background-color: var(--forth-color);
 }
 @media (min-width:768px){
